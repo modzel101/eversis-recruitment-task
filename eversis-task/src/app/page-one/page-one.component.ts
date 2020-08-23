@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-page-one',
@@ -19,9 +21,16 @@ export class PageOneComponent implements OnInit {
   ageRegexp = new RegExp('^[0-9]*$');
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  saveClick() {
+    localStorage.setItem('name', this.name);
+    localStorage.setItem('surname', this.surname);
+    localStorage.setItem('age', this.age);
+    this.router.navigate(['/page2']);
   }
 
   nameValidation() {

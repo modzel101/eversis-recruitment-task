@@ -1,5 +1,10 @@
-.welcomeSign{
-  max-width: 400px;
+.pageBackground {
+  background-color: #33CEFF;
+  height: 100vh;
+}
+
+.userDataOutput {
+  width: 80%;
   height: 50px;
   padding: 30px;
   margin: auto;
@@ -8,4 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.signWrapper {
+  min-height: 100px;
 }

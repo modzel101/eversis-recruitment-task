@@ -1,1 +1,22 @@
-<p>page-two works!</p>
+<div class="container-fluid pageBackground">
+
+  <div class="signWrapper">
+    <div class="userDataOutput">
+      <span>{{name}} {{surname}}'s Page</span>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button class="btn btn-success" (click)="accessClick()">ACCESS</button>
+  </div>
+
+  <div class="greyBox ">
+    <img *ngIf="ageValidation && ageValidation != null" src="assets/images/shrek.jpeg">
+  </div>
+
+  <div class="signWrapper">
+    <div *ngIf="!ageValidation && ageValidation != null" class="ageError">
+      You need to be at least 18 years old!
+    </div>
+  </div>
+</div>
+

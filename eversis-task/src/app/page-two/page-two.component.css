@@ -1,0 +1,30 @@
+.signWrapper {
+  display: flex;
+}
+
+
+.ageError {
+  width: 80%;
+  height: 50px;
+  padding: 30px;
+  margin: auto;
+  border: 1px solid white;
+  background-color: #ec0808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greyBox {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  background-color: #727272;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-bottom: 20px;
+}
