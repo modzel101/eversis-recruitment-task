@@ -3,6 +3,7 @@
 clone repo and run 
 
 `ng serve`
+
 in project directory and then open browser at
 
 `http://localhost:4200/`
