@@ -1,0 +1,51 @@
+<div class="container-fluid pageBackground">
+  <div class="signWrapper">
+    <div class="userDataSign">
+      User Data
+    </div>
+  </div>
+  <form [formGroup] = "personForm" >
+  <div class="row">
+    <div class="col firstColumn">
+      Name:
+    </div>
+    <div class="col secondColumn">
+      <input name="name" formControlName="name">
+    </div>
+    <div *ngIf="personForm.get('name').errors.pattern" class="col thirdColumn">
+      Invalid character!
+    </div>
+  </div>
+  <div class="row">
+    <div class="col firstColumn">
+      Surname:
+    </div>
+    <div class="col secondColumn">
+      <input formControlName="surname">
+    </div>
+    <div *ngIf="personForm.get('surname').errors.pattern" class="col thirdColumn">
+      Invalid character!
+    </div>
+  </div>
+  <div class="row">
+    <div class="col firstColumn">
+      Age:
+    </div>
+    <div class="col secondColumn">
+      <input formControlName="age">
+    </div>
+    <div *ngIf="personForm.get('age').errors.pattern" class="col thirdColumn">
+      Invalid character!
+    </div>
+  </div>
+  <div class="signWrapper">
+    <div class="userDataOutput">
+      Hello {{name}} {{surname}}!
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button class="btn btn-success">Save</button>
+  </div>
+</form>
+</div>
+

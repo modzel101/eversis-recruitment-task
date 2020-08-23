@@ -1,0 +1,19 @@
+.home {
+  background-color: #33CEFF;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeSign{
+  max-width: 400px;
+  height: 50px;
+  padding: 30px;
+  margin: auto;
+  border: 1px solid white;
+  background-color: #33A8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

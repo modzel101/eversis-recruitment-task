@@ -1,0 +1,65 @@
+.pageBackground {
+  background-color: #33CEFF;
+  height: 100vh;
+}
+
+.signWrapper {
+  min-height: 100px;
+}
+
+.userDataSign {
+  float: left;
+  max-width: 400px;
+  height: 50px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 1px solid white;
+  background-color: #33A8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstColumn {
+  margin: 20px;
+  max-height: 20px;
+  padding: 17px;
+  border: 1px solid white;
+  background-color: #33A8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thirdColumn {
+  margin: 20px;
+  max-height: 20px;
+  padding: 17px;
+  border: 1px solid white;
+  background-color: #e43030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userDataOutput {
+  width: 80%;
+  height: 50px;
+  padding: 30px;
+  margin: auto;
+  border: 1px solid white;
+  background-color: #33A8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  text-align: center;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
