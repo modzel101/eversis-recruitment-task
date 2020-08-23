@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-page-one',
@@ -8,19 +7,53 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class PageOneComponent implements OnInit {
 
-  personForm;
   name: string;
   surname: string;
-  age: number;
+  age: string;
+
+  nameInvalid = false;
+  surnameInvalid = false;
+  ageInvalid = false;
+
+  namesRegexp = new RegExp('^[a-zA-Z]*$');
+  ageRegexp = new RegExp('^[0-9]*$');
+
 
   constructor() { }
 
   ngOnInit(): void {
-    this.personForm = new FormGroup({
-      name: new FormControl(this.name, Validators.pattern(/[a-zA-Z]/)),
-      surname: new FormControl(this.surname, Validators.pattern(/[a-zA-Z]/)),
-      age: new FormControl(this.age, Validators.pattern(/^[0-9]*$/))
-    });
   }
 
+  nameValidation() {
+    if (this.namesRegexp.test(this.name)) {
+      this.nameInvalid = false;
+      console.log('name validation false');
+    }
+    else {
+      this.nameInvalid = true;
+    }
+    console.log('name validation');
+  }
+
+  surnameValidation() {
+    if (this.namesRegexp.test(this.surname)) {
+      this.surnameInvalid = false;
+    }
+    else {
+      this.surnameInvalid = true;
+    }
+    console.log('surname validation');
+
+  }
+
+  ageValidation() {
+    if (this.ageRegexp.test(this.age)) {
+      this.ageInvalid = false;
+    }
+    else {
+      this.ageInvalid = true;
+    }
+    console.log('age validation');
+
+  }
 }
