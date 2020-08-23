@@ -36,12 +36,10 @@ export class PageOneComponent implements OnInit {
   nameValidation() {
     if (this.namesRegexp.test(this.name)) {
       this.nameInvalid = false;
-      console.log('name validation false');
     }
     else {
       this.nameInvalid = true;
     }
-    console.log('name validation');
   }
 
   surnameValidation() {
@@ -51,8 +49,6 @@ export class PageOneComponent implements OnInit {
     else {
       this.surnameInvalid = true;
     }
-    console.log('surname validation');
-
   }
 
   ageValidation() {
@@ -62,7 +58,5 @@ export class PageOneComponent implements OnInit {
     else {
       this.ageInvalid = true;
     }
-    console.log('age validation');
-
   }
 }
